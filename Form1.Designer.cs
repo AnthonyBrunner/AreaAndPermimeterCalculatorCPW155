@@ -47,6 +47,7 @@
             calculateButton.TabIndex = 0;
             calculateButton.Text = "Calculate Area and Perimeter";
             calculateButton.UseVisualStyleBackColor = true;
+            calculateButton.Click += calculateButton_Click;
             // 
             // lengthText
             // 
@@ -66,6 +67,7 @@
             // 
             areaText.Location = new Point(95, 109);
             areaText.Name = "areaText";
+            areaText.ReadOnly = true;
             areaText.Size = new Size(100, 23);
             areaText.TabIndex = 3;
             // 
@@ -100,6 +102,7 @@
             // 
             perimeterText.Location = new Point(95, 150);
             perimeterText.Name = "perimeterText";
+            perimeterText.ReadOnly = true;
             perimeterText.Size = new Size(100, 23);
             perimeterText.TabIndex = 7;
             // 
