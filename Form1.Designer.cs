@@ -44,7 +44,7 @@
             calculateButton.Location = new Point(46, 195);
             calculateButton.Name = "calculateButton";
             calculateButton.Size = new Size(118, 59);
-            calculateButton.TabIndex = 0;
+            calculateButton.TabIndex = 3;
             calculateButton.Text = "Calculate Area and Perimeter";
             calculateButton.UseVisualStyleBackColor = true;
             calculateButton.Click += calculateButton_Click;
@@ -69,7 +69,8 @@
             areaText.Name = "areaText";
             areaText.ReadOnly = true;
             areaText.Size = new Size(100, 23);
-            areaText.TabIndex = 3;
+            areaText.TabIndex = 0;
+            areaText.TabStop = false;
             // 
             // lengthLabel
             // 
@@ -104,7 +105,8 @@
             perimeterText.Name = "perimeterText";
             perimeterText.ReadOnly = true;
             perimeterText.Size = new Size(100, 23);
-            perimeterText.TabIndex = 7;
+            perimeterText.TabIndex = 0;
+            perimeterText.TabStop = false;
             // 
             // perimeterLabel
             // 
