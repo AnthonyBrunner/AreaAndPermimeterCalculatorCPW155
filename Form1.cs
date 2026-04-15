@@ -14,8 +14,19 @@ namespace AreaAndPermimeterCalculator
             string inputWidth = widthText.Text;
 
             // Convert data to an integer
-            int length = Convert.ToInt32(inputLength);
-            int width = Convert.ToInt32(inputWidth);
+            if (!int.TryParse(inputLength, out int length))
+            {
+                MessageBox.Show("Invalid length entry. Please enter a valid integer.");
+                lengthText.Focus();  // Used to move the user back to the length textbox
+                return;
+            }
+
+            if (!int.TryParse(inputWidth, out int width))
+            {
+                MessageBox.Show("Invalid width entry. Please enter a valid integer.");
+                widthText.Focus();  // Used to move the user back to the width textbox
+                return;
+            }
 
             // Calculate the Area
             int area = length * width;
