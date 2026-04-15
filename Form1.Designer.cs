@@ -55,6 +55,7 @@
             lengthText.Name = "lengthText";
             lengthText.Size = new Size(100, 23);
             lengthText.TabIndex = 1;
+            lengthText.TextChanged += calculateButton_Click;
             // 
             // widthText
             // 
@@ -62,6 +63,7 @@
             widthText.Name = "widthText";
             widthText.Size = new Size(100, 23);
             widthText.TabIndex = 2;
+            widthText.TextChanged += calculateButton_Click;
             // 
             // areaText
             // 
